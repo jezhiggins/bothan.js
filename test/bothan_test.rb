@@ -7,17 +7,17 @@ describe('Bothan', function() {
   var bothan;
 
   before(function() {
-    bothan = Bothan.init({user: 'username', pass: 'password', endpoint: 'https://demo.bothan.io'})
+    bothan = new Bothan({user: 'username', pass: 'password', endpoint: 'https://demo.bothan.io'})
   });
 
   it('throws an error if options are missing', function() {
     expect(function() {
-      Bothan.init({user: 'username', pass: 'password'})
+      new Bothan({user: 'username', pass: 'password'})
     }).to.throw(Error, 'The following options are required: endpoint')
   });
 
   it('lists all metrics', function(done) {
-    bothan.methods.listMetrics(function(data, response) {
+    bothan.listMetrics(function(data, response) {
       expect(data).to.eql({
         metrics: [
           {
@@ -47,7 +47,7 @@ describe('Bothan', function() {
   })
 
   it('gets a metric', function(done) {
-    bothan.methods.getMetric({path: { 'metric': 'simple-metric' }}, function(data, response) {
+    bothan.getMetric({'metric': 'simple-metric'}, function(data) {
       expect(data).to.eql({
         '_id': {
           '$oid': '584e4b08492ad60004679936'
