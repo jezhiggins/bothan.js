@@ -46,4 +46,18 @@ describe('Bothan', function() {
     })
   })
 
+  it('gets a metric', function(done) {
+    bothan.methods.getMetric({path: { 'metric': 'simple-metric' }}, function(data, response) {
+      expect(data).to.eql({
+        '_id': {
+          '$oid': '584e4b08492ad60004679936'
+        },
+        'name': 'simple-metric',
+        'time': '2016-12-12T07:00:24.465+00:00',
+        'value': 37
+      })
+      done()
+    });
+  })
+
 });
