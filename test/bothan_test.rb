@@ -114,4 +114,17 @@ describe('Bothan', function() {
     })
   })
 
+  it('creates a metric with a target', function(done) {
+    bothan.createTargetMetric({name: 'my-new-target-metric', actual: 123, annual_target: 345, ytd_target: 130}, function() {
+      bothan.getMetric({'metric': 'my-new-target-metric'}, function(data) {
+        expect(data.value).to.eql({
+          actual: 123,
+          annual_target: 345,
+          ytd_target: 130
+        })
+        done()
+      })
+    })
+  })
+
 });

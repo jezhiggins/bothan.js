@@ -1,0 +1,27 @@
+{
+  "statusCode": 201,
+  "headers": {
+    "date": "Mon, 12 Dec 2016 15:07:58 GMT",
+    "content-type": "text/html;charset=utf-8",
+    "transfer-encoding": "chunked",
+    "connection": "keep-alive",
+    "set-cookie": [
+      "__cfduid=d9899184de7c01d62128cb1f94dfbc3781481555278; expires=Tue, 12-Dec-17 15:07:58 GMT; path=/; domain=.bothan.io; HttpOnly"
+    ],
+    "vary": "Accept, Origin",
+    "x-xss-protection": "1; mode=block",
+    "x-content-type-options": "nosniff",
+    "via": "1.1 vegur",
+    "strict-transport-security": "max-age=0; includeSubDomains",
+    "server": "cloudflare-nginx",
+    "cf-ray": "310216c98b79356c-LHR"
+  },
+  "url": "https://username:password@demo.bothan.io/metrics/my-new-target-metric",
+  "time": 243,
+  "request": {
+    "method": "POST",
+    "headers": {
+      "Content-Length": 61
+    }
+  }
+}
