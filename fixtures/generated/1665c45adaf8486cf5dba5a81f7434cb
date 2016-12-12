@@ -1,0 +1,1 @@
+{"_id":{"$oid":"584eca7aa3608b0004a5f9b5"},"name":"my-new-geometric","time":null,"value":{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[-2.6156582783015017,54.3497405310758]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-6.731370299641439,55.856756177781186]}}]}}

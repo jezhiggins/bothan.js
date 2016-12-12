@@ -77,27 +77,27 @@ describe('Bothan', function() {
   it('gets a metric for a date range', function(done) {
     bothan.getMetric({'metric': 'simple-metric', 'from': '2016-11-12T14:29:37+00:00', 'to': '2016-12-12T14:29:37+00:00'}, function(data) {
       expect(data).to.eql({
-        "count": 5,
-        "values": [
+        'count': 5,
+        'values': [
           {
-            "time": "2016-12-08T07:00:24.551+00:00",
-            "value": 33
+            'time': '2016-12-08T07:00:24.551+00:00',
+            'value': 33
           },
           {
-            "time": "2016-12-09T07:00:24.536+00:00",
-            "value": 2
+            'time': '2016-12-09T07:00:24.536+00:00',
+            'value': 2
           },
           {
-            "time": "2016-12-10T07:00:24.516+00:00",
-            "value": 71
+            'time': '2016-12-10T07:00:24.516+00:00',
+            'value': 71
           },
           {
-            "time": "2016-12-11T07:00:24.493+00:00",
-            "value": 67
+            'time': '2016-12-11T07:00:24.493+00:00',
+            'value': 67
           },
           {
-            "time": "2016-12-12T07:00:24.465+00:00",
-            "value": 37
+            'time': '2016-12-12T07:00:24.465+00:00',
+            'value': 37
           }
         ]
       })
@@ -121,6 +121,34 @@ describe('Bothan', function() {
           actual: 123,
           annual_target: 345,
           ytd_target: 130
+        })
+        done()
+      })
+    })
+  })
+
+  it('creates a metric with geodata', function(done) {
+    values =  [
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+          'coordinates': [-2.6156582783015017, 54.3497405310758]
+        }
+      },
+      {
+        'type': 'Feature',
+        'geometry': {
+          'type': 'Point',
+           'coordinates': [-6.731370299641439, 55.856756177781186]
+        }
+      }
+    ]
+    bothan.createGeoMetric({name: 'my-new-geometric', values: values}, function() {
+      bothan.getMetric({'metric': 'my-new-geometric'}, function(data) {
+        expect(data.value).to.eql({
+          type: 'FeatureCollection',
+          features: values
         })
         done()
       })
