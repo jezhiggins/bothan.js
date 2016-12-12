@@ -105,4 +105,13 @@ describe('Bothan', function() {
     })
   })
 
+  it('creates a simple metric', function(done) {
+    bothan.createMetric({name: 'my-new-metric', value: 123}, function() {
+      bothan.getMetric({'metric': 'my-new-metric'}, function(data) {
+        expect(data.value).to.eql(123)
+        done()
+      })
+    })
+  })
+
 });
