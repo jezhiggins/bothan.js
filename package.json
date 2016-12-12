@@ -1,0 +1,28 @@
+{
+  "author": "Open Data Institute <ops@theodi.org> (http://theodi.org)",
+  "name": "bothan.js",
+  "description": "A node.js client library for Bothan - https://bothan.io",
+  "version": "0.0.1",
+  "repository": {
+    "url": "https://github.com/theodi/bothan.js"
+  },
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "VCR_MODE=cache mocha test/*"
+  },
+  "dependencies": {
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "hint-hint": "~0.3.0",
+    "mocha": "^3.2.0",
+    "node-rest-client": "^2.0.1",
+    "sepia": "^2.0.2",
+    "tap": "~0.3.1"
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": ">=0.6"
+  }
+}
