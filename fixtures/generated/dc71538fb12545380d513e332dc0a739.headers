@@ -1,0 +1,27 @@
+{
+  "statusCode": 201,
+  "headers": {
+    "date": "Mon, 12 Dec 2016 17:34:08 GMT",
+    "content-type": "text/html;charset=utf-8",
+    "transfer-encoding": "chunked",
+    "connection": "keep-alive",
+    "set-cookie": [
+      "__cfduid=dcbd7b55c35f4bda56f4eedc3a5b1b7d41481564048; expires=Tue, 12-Dec-17 17:34:08 GMT; path=/; domain=.bothan.io; HttpOnly"
+    ],
+    "vary": "Accept, Origin",
+    "x-xss-protection": "1; mode=block",
+    "x-content-type-options": "nosniff",
+    "via": "1.1 vegur",
+    "strict-transport-security": "max-age=0; includeSubDomains",
+    "server": "cloudflare-nginx",
+    "cf-ray": "3102ece6b87134b2-LHR"
+  },
+  "url": "http://username:password@demo.bothan.io/metrics/my-new-geometric",
+  "time": 236,
+  "request": {
+    "method": "POST",
+    "headers": {
+      "Content-Length": 286
+    }
+  }
+}
