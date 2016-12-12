@@ -11,13 +11,13 @@
     "test": "VCR_MODE=cache mocha test/*"
   },
   "dependencies": {
-    "underscore": "^1.8.3"
+    "underscore": "^1.8.3",
+    "node-rest-client": "^2.0.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
     "hint-hint": "~0.3.0",
     "mocha": "^3.2.0",
-    "node-rest-client": "^2.0.1",
     "sepia": "^2.0.2",
     "tap": "~0.3.1"
   },
