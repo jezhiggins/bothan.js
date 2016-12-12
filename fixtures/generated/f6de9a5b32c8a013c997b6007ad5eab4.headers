@@ -3,20 +3,20 @@
   "headers": {
     "date": "Mon, 12 Dec 2016 14:31:53 GMT",
     "content-type": "application/json",
-    "content-length": "496",
+    "content-length": "116",
     "connection": "keep-alive",
     "set-cookie": [
-      "__cfduid=daaab83f624638b029ff2af683ef82c891481553113; expires=Tue, 12-Dec-17 14:31:53 GMT; path=/; domain=.bothan.io; HttpOnly"
+      "__cfduid=d78d36ea5d53ba51d3bc62058f9bde3481481553113; expires=Tue, 12-Dec-17 14:31:53 GMT; path=/; domain=.bothan.io; HttpOnly"
     ],
     "vary": "Accept, Origin",
     "x-content-type-options": "nosniff",
     "via": "1.1 vegur",
     "strict-transport-security": "max-age=0; includeSubDomains",
     "server": "cloudflare-nginx",
-    "cf-ray": "3101e1efaab8138f-LHR"
+    "cf-ray": "3101e1f0e8a8135f-LHR"
   },
-  "url": "https://demo.bothan.io/metrics.json",
-  "time": 128,
+  "url": "https://demo.bothan.io/metrics/simple-metric/2016-12-12T07:00:24.465+00:00.json",
+  "time": 137,
   "request": {
     "method": "GET",
     "headers": {}

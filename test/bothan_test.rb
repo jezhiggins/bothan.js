@@ -60,4 +60,49 @@ describe('Bothan', function() {
     });
   })
 
+  it('gets a metric for a date', function(done) {
+    bothan.getMetric({'metric': 'simple-metric', 'dateTime': '2016-12-12T07:00:24.465+00:00'}, function(data) {
+      expect(data).to.eql({
+        '_id': {
+          '$oid': '584e4b08492ad6000467993e'
+        },
+        'name': 'simple-metric',
+        'time': '2016-12-11T07:00:24.493+00:00',
+        'value': 67
+      })
+      done()
+    })
+  })
+
+  it('gets a metric for a date range', function(done) {
+    bothan.getMetric({'metric': 'simple-metric', 'from': '2016-11-12T14:29:37+00:00', 'to': '2016-12-12T14:29:37+00:00'}, function(data) {
+      expect(data).to.eql({
+        "count": 5,
+        "values": [
+          {
+            "time": "2016-12-08T07:00:24.551+00:00",
+            "value": 33
+          },
+          {
+            "time": "2016-12-09T07:00:24.536+00:00",
+            "value": 2
+          },
+          {
+            "time": "2016-12-10T07:00:24.516+00:00",
+            "value": 71
+          },
+          {
+            "time": "2016-12-11T07:00:24.493+00:00",
+            "value": 67
+          },
+          {
+            "time": "2016-12-12T07:00:24.465+00:00",
+            "value": 37
+          }
+        ]
+      })
+      done()
+    })
+  })
+
 });
