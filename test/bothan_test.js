@@ -112,6 +112,7 @@ describe('Bothan', function() {
     bothan.createMetric({name: 'my-new-metric', value: 123}, function() {
       bothan.getMetric({'metric': 'my-new-metric'}, function(data) {
         expect(data.value).to.eql(123)
+        expect(data.time).to.eql('2016-12-13T10:16:29.613+00:00')
         done()
       })
     })
