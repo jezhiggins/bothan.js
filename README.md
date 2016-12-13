@@ -10,7 +10,7 @@ A node.js client for [Bothan](https://bothan.io/), a simple platform for storing
 ### Installation
 
 ```bash
-npm install bothan.js
+npm install bothan-api
 ```
 
 ### Testing

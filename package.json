@@ -1,6 +1,6 @@
 {
   "author": "Open Data Institute <ops@theodi.org> (http://theodi.org)",
-  "name": "bothan.js",
+  "name": "bothan-api",
   "description": "A node.js client library for Bothan - https://bothan.io",
   "version": "0.0.1",
   "repository": {
