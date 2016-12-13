@@ -1,0 +1,90 @@
+[
+  {
+    "scope": "https://demo.bothan.io:443",
+    "method": "POST",
+    "path": "/metrics/my-new-multiple-metric",
+    "body": {
+      "time": "2016-01-01T00:00:00.000Z",
+      "value": {
+        "total": {
+          "value1": 123,
+          "value2": 23213,
+          "value4": 1235
+        }
+      }
+    },
+    "status": 201,
+    "response": "",
+    "rawHeaders": [
+      "Date",
+      "Tue, 13 Dec 2016 11:19:59 GMT",
+      "Content-Type",
+      "text/html;charset=utf-8",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Set-Cookie",
+      "__cfduid=d71d0834e2860fb5d20f5f41cfcac78ae1481627998; expires=Wed, 13-Dec-17 11:19:58 GMT; path=/; domain=.bothan.io; HttpOnly",
+      "Vary",
+      "Accept, Origin",
+      "X-Xss-Protection",
+      "1; mode=block",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Via",
+      "1.1 vegur",
+      "Strict-Transport-Security",
+      "max-age=0; includeSubDomains",
+      "Server",
+      "cloudflare-nginx",
+      "CF-RAY",
+      "3109063128e306dc-LHR"
+    ]
+  },
+  {
+    "scope": "https://demo.bothan.io:443",
+    "method": "GET",
+    "path": "/metrics/my-new-multiple-metric.json",
+    "body": "",
+    "status": 200,
+    "response": {
+      "_id": {
+        "$oid": "584fd95fea094e000444c87b"
+      },
+      "name": "my-new-multiple-metric",
+      "time": "2016-01-01T00:00:00.000+00:00",
+      "value": {
+        "total": {
+          "value1": 123,
+          "value2": 23213,
+          "value4": 1235
+        }
+      }
+    },
+    "rawHeaders": [
+      "Date",
+      "Tue, 13 Dec 2016 11:19:59 GMT",
+      "Content-Type",
+      "application/json",
+      "Content-Length",
+      "176",
+      "Connection",
+      "close",
+      "Set-Cookie",
+      "__cfduid=daf4c6402fe90dbb976994785351f06e31481627999; expires=Wed, 13-Dec-17 11:19:59 GMT; path=/; domain=.bothan.io; HttpOnly",
+      "Vary",
+      "Accept, Origin",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Via",
+      "1.1 vegur",
+      "Strict-Transport-Security",
+      "max-age=0; includeSubDomains",
+      "Server",
+      "cloudflare-nginx",
+      "CF-RAY",
+      "310906324ffe34b2-LHR"
+    ]
+  }
+]

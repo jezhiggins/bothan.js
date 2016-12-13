@@ -141,6 +141,22 @@ vcr.describe('Bothan', function() {
     })
   })
 
+  vcr.it('creates a metric with multiple values', function(done) {
+    values =  {
+      'value1': 123,
+      'value2': 23213,
+      'value4': 1235
+    }
+    bothan.createMultipleMetric({name: 'my-new-multiple-metric', values: values}, function() {
+      bothan.getMetric({'metric': 'my-new-multiple-metric'}, function(data) {
+        expect(data.value).to.eql({
+          total: values
+        })
+        done()
+      })
+    })
+  })
+
   vcr.it('creates a metric with geodata', function(done) {
     values =  [
       {
