@@ -1,7 +1,6 @@
 [![Build Status](http://img.shields.io/travis/theodi/bothan.js.svg?style=flat-square)](https://travis-ci.org/theodi/bothan.js)
 [![Code Climate](http://img.shields.io/codeclimate/github/theodi/bothan.js.svg?style=flat-square)](https://codeclimate.com/github/theodi/bothan.js)
-[![Coverage Status](https://coveralls.io/repos/github/theodi/bothan.js/badge.svg?branch=master)](https://coveralls.io/github/theodi/bothan.js?branch=master)
-[![NPM Version](https://img.shields.io/npm/v/bothan-api.svg?style=flat-square)](https://www.npmjs.com/package/bothan-api)
+[![Coverage Status](https://img.shields.io/coveralls/theodi/bothan.js.svg?style=flat-square)](https://coveralls.io/github/theodi/bothan.js?branch=master)[![NPM Version](https://img.shields.io/npm/v/bothan-api.svg?style=flat-square)](https://www.npmjs.com/package/bothan-api)
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://theodi.mit-license.org)
 
 ## bothan.js
