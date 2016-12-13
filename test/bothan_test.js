@@ -66,7 +66,7 @@ vcr.describe('Bothan', function() {
   })
 
   vcr.it('gets a metric for a date', function(done) {
-    bothan.getMetric({'metric': 'simple-metric', 'dateTime': '2016-12-12T07:00:24.465+00:00'}, function(data) {
+    bothan.getMetric({'metric': 'simple-metric', 'time': '2016-12-12T07:00:24.465+00:00'}, function(data) {
       expect(data).to.eql({
         '_id': {
           '$oid': '584fd6680d737a00040e5e02'
