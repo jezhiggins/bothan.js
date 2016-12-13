@@ -25,8 +25,7 @@ vcr.describe('Bothan', function() {
 
   vcr.it('lists all metrics', function(done) {
     bothan.listMetrics(function(data, response) {
-      expect(data).to.eql({
-        metrics: [
+      expect(data).to.eql([
           {
             name: 'metric-with-geodata',
             url: 'https://demo.bothan.io/metrics/metric-with-geodata.json'
@@ -47,8 +46,7 @@ vcr.describe('Bothan', function() {
             name: 'simple-metric',
             url: 'https://demo.bothan.io/metrics/simple-metric.json'
           }
-        ]
-      })
+        ])
       done()
     })
   })
