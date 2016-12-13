@@ -1,0 +1,78 @@
+[
+  {
+    "scope": "https://demo.bothan.io:443",
+    "method": "POST",
+    "path": "/metrics/my-new-metric",
+    "body": {
+      "time": "2016-01-01T00:00:00.000Z",
+      "value": 123
+    },
+    "status": 201,
+    "response": "",
+    "rawHeaders": [
+      "Date",
+      "Tue, 13 Dec 2016 11:10:09 GMT",
+      "Content-Type",
+      "text/html;charset=utf-8",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Set-Cookie",
+      "__cfduid=d212aaad0fb1536735675ef822b2d53821481627409; expires=Wed, 13-Dec-17 11:10:09 GMT; path=/; domain=.bothan.io; HttpOnly",
+      "Vary",
+      "Accept, Origin",
+      "X-Xss-Protection",
+      "1; mode=block",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Via",
+      "1.1 vegur",
+      "Strict-Transport-Security",
+      "max-age=0; includeSubDomains",
+      "Server",
+      "cloudflare-nginx",
+      "CF-RAY",
+      "3108f7ccbc3a35cc-LHR"
+    ]
+  },
+  {
+    "scope": "https://demo.bothan.io:443",
+    "method": "GET",
+    "path": "/metrics/my-new-metric.json",
+    "body": "",
+    "status": 200,
+    "response": {
+      "_id": {
+        "$oid": "584fd711ea094e000444c874"
+      },
+      "name": "my-new-metric",
+      "time": "2016-01-01T00:00:00.000+00:00",
+      "value": 123
+    },
+    "rawHeaders": [
+      "Date",
+      "Tue, 13 Dec 2016 11:10:09 GMT",
+      "Content-Type",
+      "application/json",
+      "Content-Length",
+      "117",
+      "Connection",
+      "close",
+      "Set-Cookie",
+      "__cfduid=d212aaad0fb1536735675ef822b2d53821481627409; expires=Wed, 13-Dec-17 11:10:09 GMT; path=/; domain=.bothan.io; HttpOnly",
+      "Vary",
+      "Accept, Origin",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Via",
+      "1.1 vegur",
+      "Strict-Transport-Security",
+      "max-age=0; includeSubDomains",
+      "Server",
+      "cloudflare-nginx",
+      "CF-RAY",
+      "3108f7cdac7f35cc-LHR"
+    ]
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "scope": "https://demo.bothan.io:443",
+    "method": "GET",
+    "path": "/metrics.json",
+    "body": "",
+    "status": 200,
+    "response": {
+      "metrics": [
+        {
+          "name": "metric-with-geodata",
+          "url": "https://demo.bothan.io/metrics/metric-with-geodata.json"
+        },
+        {
+          "name": "metric-with-multiple-values",
+          "url": "https://demo.bothan.io/metrics/metric-with-multiple-values.json"
+        },
+        {
+          "name": "metric-with-target",
+          "url": "https://demo.bothan.io/metrics/metric-with-target.json"
+        },
+        {
+          "name": "metric-with-ytd-target",
+          "url": "https://demo.bothan.io/metrics/metric-with-ytd-target.json"
+        },
+        {
+          "name": "simple-metric",
+          "url": "https://demo.bothan.io/metrics/simple-metric.json"
+        }
+      ]
+    },
+    "rawHeaders": [
+      "Date",
+      "Tue, 13 Dec 2016 11:08:17 GMT",
+      "Content-Type",
+      "application/json",
+      "Content-Length",
+      "496",
+      "Connection",
+      "close",
+      "Set-Cookie",
+      "__cfduid=dce476e26d026b417e4c7cec84bbb705f1481627297; expires=Wed, 13-Dec-17 11:08:17 GMT; path=/; domain=.bothan.io; HttpOnly",
+      "Vary",
+      "Accept, Origin",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Via",
+      "1.1 vegur",
+      "Strict-Transport-Security",
+      "max-age=0; includeSubDomains",
+      "Server",
+      "cloudflare-nginx",
+      "CF-RAY",
+      "3108f5105ebe0a6c-LHR"
+    ]
+  }
+]

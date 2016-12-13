@@ -1,0 +1,86 @@
+[
+  {
+    "scope": "https://demo.bothan.io:443",
+    "method": "POST",
+    "path": "/metrics/my-new-target-metric",
+    "body": {
+      "time": "2016-01-01T00:00:00.000Z",
+      "value": {
+        "actual": 123,
+        "annual_target": 345,
+        "ytd_target": 130
+      }
+    },
+    "status": 201,
+    "response": "",
+    "rawHeaders": [
+      "Date",
+      "Tue, 13 Dec 2016 11:10:09 GMT",
+      "Content-Type",
+      "text/html;charset=utf-8",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Set-Cookie",
+      "__cfduid=dc0b904cf7b2a34a88152169576f33a871481627409; expires=Wed, 13-Dec-17 11:10:09 GMT; path=/; domain=.bothan.io; HttpOnly",
+      "Vary",
+      "Accept, Origin",
+      "X-Xss-Protection",
+      "1; mode=block",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Via",
+      "1.1 vegur",
+      "Strict-Transport-Security",
+      "max-age=0; includeSubDomains",
+      "Server",
+      "cloudflare-nginx",
+      "CF-RAY",
+      "3108f7cfcaf13452-LHR"
+    ]
+  },
+  {
+    "scope": "https://demo.bothan.io:443",
+    "method": "GET",
+    "path": "/metrics/my-new-target-metric.json",
+    "body": "",
+    "status": 200,
+    "response": {
+      "_id": {
+        "$oid": "584fd711ea094e000444c877"
+      },
+      "name": "my-new-target-metric",
+      "time": "2016-01-01T00:00:00.000+00:00",
+      "value": {
+        "actual": 123,
+        "annual_target": 345,
+        "ytd_target": 130
+      }
+    },
+    "rawHeaders": [
+      "Date",
+      "Tue, 13 Dec 2016 11:10:10 GMT",
+      "Content-Type",
+      "application/json",
+      "Content-Length",
+      "172",
+      "Connection",
+      "close",
+      "Set-Cookie",
+      "__cfduid=d4924989ce2354c50c562d4cafe506ec41481627409; expires=Wed, 13-Dec-17 11:10:09 GMT; path=/; domain=.bothan.io; HttpOnly",
+      "Vary",
+      "Accept, Origin",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Via",
+      "1.1 vegur",
+      "Strict-Transport-Security",
+      "max-age=0; includeSubDomains",
+      "Server",
+      "cloudflare-nginx",
+      "CF-RAY",
+      "3108f7d049f6356c-LHR"
+    ]
+  }
+]

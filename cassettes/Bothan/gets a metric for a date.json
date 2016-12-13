@@ -1,0 +1,41 @@
+[
+  {
+    "scope": "https://demo.bothan.io:443",
+    "method": "GET",
+    "path": "/metrics/simple-metric/2016-12-12T07:00:24.465+00:00.json",
+    "body": "",
+    "status": 200,
+    "response": {
+      "_id": {
+        "$oid": "584fd6680d737a00040e5e02"
+      },
+      "name": "simple-metric",
+      "time": "2016-12-11T11:07:20.458+00:00",
+      "value": 13
+    },
+    "rawHeaders": [
+      "Date",
+      "Tue, 13 Dec 2016 11:09:01 GMT",
+      "Content-Type",
+      "application/json",
+      "Content-Length",
+      "116",
+      "Connection",
+      "close",
+      "Set-Cookie",
+      "__cfduid=d7734b4d9f4bc73884adb7b7e356109751481627341; expires=Wed, 13-Dec-17 11:09:01 GMT; path=/; domain=.bothan.io; HttpOnly",
+      "Vary",
+      "Accept, Origin",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Via",
+      "1.1 vegur",
+      "Strict-Transport-Security",
+      "max-age=0; includeSubDomains",
+      "Server",
+      "cloudflare-nginx",
+      "CF-RAY",
+      "3108f621ae7d35a2-LHR"
+    ]
+  }
+]

@@ -1,0 +1,126 @@
+[
+  {
+    "scope": "https://demo.bothan.io:443",
+    "method": "POST",
+    "path": "/metrics/my-new-geometric",
+    "body": {
+      "time": "2016-01-01T00:00:00.000Z",
+      "value": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -2.6156582783015017,
+                54.3497405310758
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -6.731370299641439,
+                55.856756177781186
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "status": 201,
+    "response": "",
+    "rawHeaders": [
+      "Date",
+      "Tue, 13 Dec 2016 11:10:10 GMT",
+      "Content-Type",
+      "text/html;charset=utf-8",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Set-Cookie",
+      "__cfduid=d69a1d2aae664d9b139eb9dc8b29ac3371481627410; expires=Wed, 13-Dec-17 11:10:10 GMT; path=/; domain=.bothan.io; HttpOnly",
+      "Vary",
+      "Accept, Origin",
+      "X-Xss-Protection",
+      "1; mode=block",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Via",
+      "1.1 vegur",
+      "Strict-Transport-Security",
+      "max-age=0; includeSubDomains",
+      "Server",
+      "cloudflare-nginx",
+      "CF-RAY",
+      "3108f7d0efa50b7b-LHR"
+    ]
+  },
+  {
+    "scope": "https://demo.bothan.io:443",
+    "method": "GET",
+    "path": "/metrics/my-new-geometric.json",
+    "body": "",
+    "status": 200,
+    "response": {
+      "_id": {
+        "$oid": "584fd712ea094e000444c879"
+      },
+      "name": "my-new-geometric",
+      "time": "2016-01-01T00:00:00.000+00:00",
+      "value": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -2.6156582783015017,
+                54.3497405310758
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -6.731370299641439,
+                55.856756177781186
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "rawHeaders": [
+      "Date",
+      "Tue, 13 Dec 2016 11:10:10 GMT",
+      "Content-Type",
+      "application/json",
+      "Content-Length",
+      "359",
+      "Connection",
+      "close",
+      "Set-Cookie",
+      "__cfduid=d4ea3c7edb4eca107dc628c08adad06fe1481627410; expires=Wed, 13-Dec-17 11:10:10 GMT; path=/; domain=.bothan.io; HttpOnly",
+      "Vary",
+      "Accept, Origin",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Via",
+      "1.1 vegur",
+      "Strict-Transport-Security",
+      "max-age=0; includeSubDomains",
+      "Server",
+      "cloudflare-nginx",
+      "CF-RAY",
+      "3108f7d16db834e2-LHR"
+    ]
+  }
+]
