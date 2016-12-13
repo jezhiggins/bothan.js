@@ -2,13 +2,20 @@ require('sepia');
 
 var Bothan = require('../lib/bothan')
 var expect = require('chai').expect
+var tk = require('timekeeper');
 
 describe('Bothan', function() {
   var bothan;
 
   before(function() {
     bothan = new Bothan({user: 'username', pass: 'password', endpoint: 'https://demo.bothan.io'})
+    var time = new Date('2016-01-01T00:00:00');
+    tk.freeze(time);
   });
+
+  after(function() {
+    tk.reset();
+  })
 
   it('throws an error if options are missing', function() {
     expect(function() {
