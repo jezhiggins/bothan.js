@@ -4,3 +4,11 @@ node_js:
 - '0.10'
 script:
 - npm test
+deploy:
+  provider: npm
+  email: pezholio@gmail.com
+  api_key:
+    secure: JrQnt3FU3A6eSP8Q830XSEANhLMp8MLI7y+C09ZRbMsiaROv4A2O5iG/d27ufRitYnEPBEtWWPnCcGj0yvfJ0bcQqXVTZdi5aKYhwHHocIVDpITAIsybiTTOQcNsPp6Z0kNC1xN22qmawY9qpLLaZi1Pe5uRCt48OlV8QEm9qTAnHLnFHRkEJ0JloUMFFZEXHwmnumKbVyBRF+61HFSLGm/bMQNriG8IIiuZ2eSwOmAV3MrtEJ0X5MdMRkd+emxU/I0U+fvmxzbyT1phROa0bt3LMqcuVSHzq5OAYamZKsE4mzAjLs9XsPPL5uKOM/wkXLI/rxkwzBFgU6dsiHGpV6xf3yjLnYGojEG0hJKT1ifzKi2MLDTa8zBjSashFQ5j3fQnciILlK0udkhhfbKgT7oUPqWuIs+8ESbDpMBqrJ5vvDI9jtK4kV0oxEEDua8TdvdXrNTl5UnPy7rJeNFcy3oH5DJ4G/Blv+Gm19DCXuGQPwcbkHGXlPv9fVmgL4CgdkqS9bF2nBEs+dUFWf/TjQOZKLcaw1JJT6IdbtnAPDWtH0sR7cpccViIG96neBO5Mb2lZti6GhO66CFHAofn7DqlPOXXwWcdLAZJhEdgDgYyQ4Mek+hQP50tqdUTUO6ppmG0/4ptqzhPKNZm5oBnfKDFC6BTXyfAbYNJ0FUdbc0=
+  on:
+    tags: true
+    repo: theodi/bothan.js
