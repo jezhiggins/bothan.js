@@ -57,11 +57,11 @@ describe('Bothan', function() {
     bothan.getMetric({'metric': 'simple-metric'}, function(data) {
       expect(data).to.eql({
         '_id': {
-          '$oid': '584e4b08492ad60004679936'
+          '$oid': '584fccacbe0e7a0004db7322'
         },
         'name': 'simple-metric',
-        'time': '2016-12-12T07:00:24.465+00:00',
-        'value': 37
+        'time': '2016-12-13T10:25:48.733+00:00',
+        'value': 17
       })
       done()
     });
@@ -71,11 +71,11 @@ describe('Bothan', function() {
     bothan.getMetric({'metric': 'simple-metric', 'dateTime': '2016-12-12T07:00:24.465+00:00'}, function(data) {
       expect(data).to.eql({
         '_id': {
-          '$oid': '584e4b08492ad6000467993e'
+          '$oid': '584fccacbe0e7a0004db7332'
         },
         'name': 'simple-metric',
-        'time': '2016-12-11T07:00:24.493+00:00',
-        'value': 67
+        'time': '2016-12-11T10:25:48.780+00:00',
+        'value': 99
       })
       done()
     })
@@ -84,27 +84,23 @@ describe('Bothan', function() {
   it('gets a metric for a date range', function(done) {
     bothan.getMetric({'metric': 'simple-metric', 'from': '2016-11-12T14:29:37+00:00', 'to': '2016-12-12T14:29:37+00:00'}, function(data) {
       expect(data).to.eql({
-        'count': 5,
+        'count': 4,
         'values': [
           {
-            'time': '2016-12-08T07:00:24.551+00:00',
-            'value': 33
+            'time': '2016-12-09T10:25:48.820+00:00',
+            'value': 83
           },
           {
-            'time': '2016-12-09T07:00:24.536+00:00',
-            'value': 2
+            'time': '2016-12-10T10:25:48.800+00:00',
+            'value': 22
           },
           {
-            'time': '2016-12-10T07:00:24.516+00:00',
-            'value': 71
+            'time': '2016-12-11T10:25:48.780+00:00',
+            'value': 99
           },
           {
-            'time': '2016-12-11T07:00:24.493+00:00',
-            'value': 67
-          },
-          {
-            'time': '2016-12-12T07:00:24.465+00:00',
-            'value': 37
+            'time': '2016-12-12T10:25:48.760+00:00',
+            'value': 36
           }
         ]
       })

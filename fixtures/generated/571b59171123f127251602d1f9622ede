@@ -1,1 +1,1 @@
-{"_id":{"$oid":"584ebd4ea3608b0004a5f9b1"},"name":"my-new-target-metric","time":null,"value":{"actual":123,"annual_target":345,"ytd_target":130}}
+{"_id":{"$oid":"584fccf3ea094e000444c86e"},"name":"my-new-target-metric","time":"2016-01-01T00:00:00.000+00:00","value":{"actual":123,"annual_target":345,"ytd_target":130}}
