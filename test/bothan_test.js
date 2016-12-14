@@ -183,4 +183,35 @@ vcr.describe('Bothan', function() {
     })
   })
 
+  vcr.it('creates a new metric with increment', function() {
+    bothan.incrementMetrics({name: 'my-new-metric'}, function() {
+      bothan.getMetric({'metric': 'my-new-metric'}, function(data) {
+        expect(data.value).to.eql(1)
+        done()
+      })
+    });
+  })
+
+  vcr.it('increments an existing metric', function() {
+    bothan.createMetric({name: 'my-metric-for-increment', value: 123}, function() {
+      bothan.incrementMetrics({name: 'my-metric-for-increment'}, function() {
+        bothan.getMetric({'metric': 'my-metric-for-increment'}, function(data) {
+          expect(data.value).to.eql(124)
+          done()
+        })
+      });
+    })
+  })
+
+  vcr.it('increments by a given amount', function() {
+    bothan.createMetric({name: 'my-new-metric-for-increment', value: 123}, function() {
+      bothan.incrementMetrics({name: 'my-metric-for-increment', amount: 123}, function() {
+        bothan.getMetric({'metric': 'my-metric-for-increment'}, function(data) {
+          expect(data.value).to.eql(246)
+          done()
+        })
+      });
+    })
+  })
+
 });
