@@ -1,0 +1,112 @@
+[
+  {
+    "scope": "https://demo.bothan.io:443",
+    "method": "POST",
+    "path": "/metrics/my-metric-for-increment",
+    "body": {
+      "time": "2016-01-01T00:00:00.000Z",
+      "value": 123
+    },
+    "status": 201,
+    "response": "",
+    "rawHeaders": [
+      "Date",
+      "Thu, 15 Dec 2016 10:50:37 GMT",
+      "Content-Type",
+      "text/html;charset=utf-8",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Set-Cookie",
+      "__cfduid=d5fcaaf193809ef7be00b152c20aec6061481799037; expires=Fri, 15-Dec-17 10:50:37 GMT; path=/; domain=.bothan.io; HttpOnly",
+      "Vary",
+      "Accept, Origin",
+      "X-Xss-Protection",
+      "1; mode=block",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Via",
+      "1.1 vegur",
+      "Strict-Transport-Security",
+      "max-age=0; includeSubDomains",
+      "Server",
+      "cloudflare-nginx",
+      "CF-RAY",
+      "311955ee8b730b7b-LHR"
+    ]
+  },
+  {
+    "scope": "https://demo.bothan.io:443",
+    "method": "POST",
+    "path": "/metrics/my-metric-for-increment/increment/1",
+    "body": "",
+    "status": 201,
+    "response": "",
+    "rawHeaders": [
+      "Date",
+      "Thu, 15 Dec 2016 10:50:37 GMT",
+      "Content-Type",
+      "text/html;charset=utf-8",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Set-Cookie",
+      "__cfduid=d60ffd299d5089c711ae66a92869c36871481799037; expires=Fri, 15-Dec-17 10:50:37 GMT; path=/; domain=.bothan.io; HttpOnly",
+      "Vary",
+      "Accept, Origin",
+      "X-Xss-Protection",
+      "1; mode=block",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Via",
+      "1.1 vegur",
+      "Strict-Transport-Security",
+      "max-age=0; includeSubDomains",
+      "Server",
+      "cloudflare-nginx",
+      "CF-RAY",
+      "311955ef699a35a2-LHR"
+    ]
+  },
+  {
+    "scope": "https://demo.bothan.io:443",
+    "method": "GET",
+    "path": "/metrics/my-metric-for-increment.json",
+    "body": "",
+    "status": 200,
+    "response": {
+      "_id": {
+        "$oid": "5852757d3aca3c0004f45bb3"
+      },
+      "name": "my-metric-for-increment",
+      "time": "2016-12-15T10:50:37.416+00:00",
+      "value": 124
+    },
+    "rawHeaders": [
+      "Date",
+      "Thu, 15 Dec 2016 10:50:37 GMT",
+      "Content-Type",
+      "application/json",
+      "Content-Length",
+      "127",
+      "Connection",
+      "close",
+      "Set-Cookie",
+      "__cfduid=d434b369e79c9550fad7523a38df6fd981481799037; expires=Fri, 15-Dec-17 10:50:37 GMT; path=/; domain=.bothan.io; HttpOnly",
+      "Vary",
+      "Accept, Origin",
+      "X-Content-Type-Options",
+      "nosniff",
+      "Via",
+      "1.1 vegur",
+      "Strict-Transport-Security",
+      "max-age=0; includeSubDomains",
+      "Server",
+      "cloudflare-nginx",
+      "CF-RAY",
+      "311955f02e490a6c-LHR"
+    ]
+  }
+]
