@@ -183,7 +183,7 @@ vcr.describe('Bothan', function() {
     })
   })
 
-  vcr.it('creates a new metric with increment', function() {
+  vcr.it('creates a new metric with increment', function(done) {
     bothan.incrementMetrics({name: 'my-new-metric'}, function() {
       bothan.getMetric({'metric': 'my-new-metric'}, function(data) {
         expect(data.value).to.eql(1)
@@ -192,7 +192,7 @@ vcr.describe('Bothan', function() {
     });
   })
 
-  vcr.it('increments an existing metric', function() {
+  vcr.it('increments an existing metric', function(done) {
     bothan.createMetric({name: 'my-metric-for-increment', value: 123}, function() {
       bothan.incrementMetrics({name: 'my-metric-for-increment'}, function() {
         bothan.getMetric({'metric': 'my-metric-for-increment'}, function(data) {
@@ -203,7 +203,7 @@ vcr.describe('Bothan', function() {
     })
   })
 
-  vcr.it('increments by a given amount', function() {
+  vcr.it('increments by a given amount', function(done) {
     bothan.createMetric({name: 'my-new-metric-for-increment', value: 123}, function() {
       bothan.incrementMetrics({name: 'my-metric-for-increment', amount: 123}, function() {
         bothan.getMetric({'metric': 'my-metric-for-increment'}, function(data) {
